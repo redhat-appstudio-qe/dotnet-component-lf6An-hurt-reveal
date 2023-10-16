@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-reik
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rsoaresd_org/spi-demos-gpab-tenant/dotnet-component/devfile-sample-dotnet60-basic-reik@sha256:9bad994c990c59d13c5e41264ceb01283e2914e54af94c66d90777225071be4c
+        name: main
+        resources: {}
+status: {}
